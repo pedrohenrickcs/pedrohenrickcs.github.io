@@ -6,7 +6,10 @@ import SEO from '../components/SEO';
 
 const Home = () => (
   <Layout>
-    <SEO />
+    <SEO 
+      description="Front-end developer, developing web pages" 
+      keywords="React, Gatsby, Front-end, developer, API"
+    />
     <h1>Pedro Henrick Cavalcante Souza</h1>
     <h2>Web Developer</h2>
 
