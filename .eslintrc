@@ -23,6 +23,8 @@
                 "extensions": [".js", ".jsx"]
             }
         ],
-        "react/forbid-prop-types": "off"
+        "react/forbid-prop-types": "off",
+        "no-mixed-spaces-and-tabs": 1,
+        "indent": ["error", "tab"]
     }
 }
