@@ -1,9 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Helmet from 'react-helmet';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+	faGithub, faLinkedin, faCodepen
+} from '@fortawesome/free-brands-svg-icons';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+
+import photo from '../assets/images/me.jpg'
 
 const Home = () => (
 	<Layout>
@@ -11,26 +16,25 @@ const Home = () => (
 		description="Front-end developer, developing web pages" 
 		keywords="React, Gatsby, Front-end, developer, API"
 		/>
-		<Helmet>
-			<script src="https://kit.fontawesome.com/1349f8977b.js"></script>
-		</Helmet>
+		<figure className="image photo is-128x128">
+			<img className="is-rounded" src={photo} alt="Pedro Henrick Cavalcante Souza" />
+		</figure>
 		<h1 className="title has-text-centered">Pedro Henrick Cavalcante Souza</h1>
 		<h2 className="subtitle has-text-centered">Web Developer</h2>
 		<div className="has-text-centered">
 			<a href="https://github.com/pedrohenrickcs" target="_blank" aria-label="Github">
-				<span className="icon is-large">
-					<i class="fab fa-2x fa-github-square">
-					</i>
+				<span className="icon is-large fa-2x">
+					<FontAwesomeIcon icon={faGithub}/>
 				</span>
 			</a>
 			<a href="https://www.linkedin.com/in/pedro-henrickcs/" target="_blank" aria-label="Linkedin">
-				<span className="icon is-large">
-					<i class="fab fa-2x fa-linkedin"></i>
+				<span className="icon is-large fa-2x">
+					<FontAwesomeIcon icon={faLinkedin}/>
 				</span>
 			</a>
 			<a href="https://codepen.io/pedrohenrickcs/" target="_blank" aria-label="Codepen">
-				<span className="icon is-large">
-					<i class="fab fa-2x fa-codepen"></i>
+				<span className="icon is-large fa-2x">
+					<FontAwesomeIcon icon={faCodepen}/>
 				</span>
 			</a>
 		</div>
