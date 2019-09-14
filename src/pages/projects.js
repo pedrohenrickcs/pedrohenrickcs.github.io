@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import Card from '../components/Card/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { prototype } from 'events';
@@ -72,111 +73,46 @@ const Projects = ({data}) => (
 
 			<div className="columns">
 				<div className="column is-half is-offset-one-quarter">
-					<a href="https://loja.brastemp.com.br/cadastro" target="_blank">
-						<div className="card">
-							<div className="card-content">
-								<div className="media">
-									<div className="media-left">
-										<Img fixed={data.project1.childImageSharp.fixed} alt={"Brastemp"} />
-									</div>
-									<div className="media-content">
-										<h4 className="title is-size-5-desktop is-size-5-touch">Aniversário Brastemp</h4>
-										<p className="subtitle is-size-5-desktop is-size-6-touch">Criação Landing Page para aniversário da loja</p>
-										<div className="tags">
-											<span className="tag">HTML</span>
-											<span className="tag">SCSS</span>
-											<span className="tag">Javascript</span>
-											<span className="tag">Vtex</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="https://www.diretonaloja.com.br/landing" target="_blank">
-						<div className="card">
-							<div className="card-content">
-								<div className="media">
-									<div className="media-left">
-										<Img fixed={data.project2.childImageSharp.fixed} alt={"Direto na Loja"} />
-									</div>
-									<div className="media-content">
-										<h4 className="title is-size-5-desktop is-size-5-touch">Aniversário Brastemp</h4>
-										<p className="subtitle is-size-5-desktop is-size-6-touch">Criação Landing Page para aniversário da loja</p>
-										<div className="tags">
-											<span className="tag">HTML</span>
-											<span className="tag">SCSS</span>
-											<span className="tag">Javascript</span>
-											<span className="tag">Vtex</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="https://www.diretonaloja.com.br/cupom" target="_blank">
-						<div className="card">
-							<div className="card-content">
-								<div className="media">
-									<div className="media-left">
-										<Img fixed={data.project3.childImageSharp.fixed} alt={"Direto na Loja"} />
-									</div>
-									<div className="media-content">
-										<h4 className="title is-size-5-desktop is-size-5-touch">Diretonaloja</h4>
-										<p className="subtitle is-size-5-desktop is-size-6-touch">Página de cupom customizada feita em Vtex</p>
-										<div className="tags">
-											<span className="tag">HTML</span>
-											<span className="tag">SCSS</span>
-											<span className="tag">Javascript</span>
-											<span className="tag">Vtex</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="https://www.compracerta.com.br/landing/aniversario" target="_blank">
-						<div className="card">
-							<div className="card-content">
-								<div className="media">
-									<div className="media-left">
-										<Img fixed={data.project4.childImageSharp.fixed} alt={"Direto na Loja"} />
-									</div>
-									<div className="media-content">
-										<h4 className="title is-size-5-desktop is-size-5-touch">Compra Certa</h4>
-										<p className="subtitle is-size-5-desktop is-size-6-touch">Criação Landing Page para aniversário da loja</p>
-										<div className="tags">
-											<span className="tag">HTML</span>
-											<span className="tag">SCSS</span>
-											<span className="tag">Javascript</span>
-											<span className="tag">Vtex</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
-					<a href="https://pedrohenrick-api-github.netlify.com/" target="_blank">
-						<div className="card">
-							<div className="card-content">
-								<div className="media">
-									<div className="media-left">
-										<Img fixed={data.project5.childImageSharp.fixed} alt={"Api Guthub"} />
-									</div>
-									<div className="media-content">
-										<h4 className="title is-size-5-desktop is-size-5-touch">Api GitHub</h4>
-										<p className="subtitle is-size-5-desktop is-size-6-touch">Consulta repositórios GitHub</p>
-										<div className="tags">
-											<span className="tag">HTML</span>
-											<span className="tag">React</span>
-											<span className="tag">SCSS</span>
-											<span className="tag">Rest API</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</a>
+
+					<Card
+						title="Aniversário Brastemp"
+						subtitle="Criação Landing Page para aniversário da loja"
+						link="https://loja.brastemp.com.br/cadastro"
+						tags={["HTML", "SCSS", "Javascript", "Vtex"]}
+						image={<Img fixed={data.project1.childImageSharp.fixed} alt={"Brastemp"} />}
+					/>
+
+					<Card
+						title="Landing Page"
+						subtitle="Criação Landing Page para aniversário da loja"
+						link="https://www.diretonaloja.com.br/landing"
+						tags={["HTML", "SCSS", "Javascript", "Vtex"]}
+						image={<Img fixed={data.project2.childImageSharp.fixed} alt={"Direto na Loja"} />}
+					/>
+
+					<Card
+						title="Diretonaloja"
+						subtitle="Página de cupom customizada feita em Vtex"
+						link="https://www.diretonaloja.com.br/cupom"
+						tags={["HTML", "SCSS", "Javascript", "Vtex"]}
+						image={<Img fixed={data.project3.childImageSharp.fixed} alt={"Direto na Loja"} />}
+					/>
+
+					<Card
+						title="Compra Certa"
+						subtitle="Criação Landing Page para aniversário da loja"
+						link="https://www.compracerta.com.br/landing/aniversario"
+						tags={["HTML", "SCSS", "Javascript", "Vtex"]}
+						image={<Img fixed={data.project4.childImageSharp.fixed} alt={"Direto na Loja"} />}
+					/>
+
+					<Card
+						title="Api GitHub"
+						subtitle="Consulta repositórios GitHub"
+						link="https://pedrohenrick-api-github.netlify.com"
+						tags={["HTML", "SCSS", "React", "Rest API"]}
+						image={<Img fixed={data.project5.childImageSharp.fixed} alt={"Api Guthub"} />}
+					/>
 				</div>
 			</div>
 		</section>
