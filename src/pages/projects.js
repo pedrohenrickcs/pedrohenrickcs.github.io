@@ -39,6 +39,13 @@ export const queryImage = graphql `
 							}
 						}
 					}
+					project5: file(relativePath: { eq: "github.png" }) {
+						childImageSharp {
+							fixed(width: 96, height: 96) {
+							...GatsbyImageSharpFixed
+							}
+						}
+					}
 				}
 			`;
 
@@ -77,7 +84,7 @@ const Projects = ({data}) => (
 										<p className="subtitle is-size-5-desktop is-size-6-touch">Criação Landing Page para aniversário da loja</p>
 										<div className="tags">
 											<span className="tag">HTML</span>
-											<span className="tag">CSS</span>
+											<span className="tag">SCSS</span>
 											<span className="tag">Javascript</span>
 											<span className="tag">Vtex</span>
 										</div>
@@ -98,7 +105,7 @@ const Projects = ({data}) => (
 										<p className="subtitle is-size-5-desktop is-size-6-touch">Criação Landing Page para aniversário da loja</p>
 										<div className="tags">
 											<span className="tag">HTML</span>
-											<span className="tag">CSS</span>
+											<span className="tag">SCSS</span>
 											<span className="tag">Javascript</span>
 											<span className="tag">Vtex</span>
 										</div>
@@ -119,7 +126,7 @@ const Projects = ({data}) => (
 										<p className="subtitle is-size-5-desktop is-size-6-touch">Página de cupom customizada feita em Vtex</p>
 										<div className="tags">
 											<span className="tag">HTML</span>
-											<span className="tag">CSS</span>
+											<span className="tag">SCSS</span>
 											<span className="tag">Javascript</span>
 											<span className="tag">Vtex</span>
 										</div>
@@ -140,9 +147,30 @@ const Projects = ({data}) => (
 										<p className="subtitle is-size-5-desktop is-size-6-touch">Criação Landing Page para aniversário da loja</p>
 										<div className="tags">
 											<span className="tag">HTML</span>
-											<span className="tag">CSS</span>
+											<span className="tag">SCSS</span>
 											<span className="tag">Javascript</span>
 											<span className="tag">Vtex</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="https://pedrohenrick-api-github.netlify.com/" target="_blank">
+						<div className="card">
+							<div className="card-content">
+								<div className="media">
+									<div className="media-left">
+										<Img fixed={data.project5.childImageSharp.fixed} alt={"Api Guthub"} />
+									</div>
+									<div className="media-content">
+										<h4 className="title is-size-5-desktop is-size-5-touch">Api GitHub</h4>
+										<p className="subtitle is-size-5-desktop is-size-6-touch">Consulta repositórios GitHub</p>
+										<div className="tags">
+											<span className="tag">HTML</span>
+											<span className="tag">React</span>
+											<span className="tag">SCSS</span>
+											<span className="tag">Rest API</span>
 										</div>
 									</div>
 								</div>
