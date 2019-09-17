@@ -3,9 +3,9 @@ import prototypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-import Card from '../components/Card/Card';
+import Layout from 'components/Layout';
+import SEO from 'components/SEO';
+import Card from 'components/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { prototype } from 'events';
