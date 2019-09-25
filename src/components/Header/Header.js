@@ -1,32 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1
-        style={{
-          margin: 0,
-          color: 'white',
-          textDecoration: 'none',
-        }}
-      >
-        {siteTitle}
-      </h1>
-    </div>
-  </div>
-);
+class Header extends Component {
+	state = {
+		isMenuOpen: false,
+	}
+
+	render = () => {
+		
+		const { siteTitle } = this.props;
+		const { isMenuOpen } = this.state;
+		const burgerClass = isMenuOpen ? 'is-active' : '';
+
+		return (
+			<nav className="navbar">
+				<div className="container">
+					<div className="navbar-brand">
+						<h1 className="navbar-item">
+							{siteTitle}
+						</h1>
+						<a
+							className={`navbar-burger ${burgerClass}`}
+							role="button"
+							aria-label="menu"
+						>
+							<span aria-hidden="true" />
+							<span aria-hidden="true" />
+							<span aria-hidden="true" />
+						</a>
+					</div>
+					<div className={`navbar-menu ${burgerClass}`}>
+						<div className="navbar-end">
+							<a className="navbar-item">Home</a>
+							<a className="navbar-item">Projects</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		)
+	}
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
