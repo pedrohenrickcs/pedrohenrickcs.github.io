@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 
 class Header extends Component {
 	state = {
 		isMenuOpen: false,
+	}
+
+	handleMenu = () => {
+		this.setState(previousState => ({
+			 isMenuOpen: !previousState.isMenuOpen,
+		}));
+	}
+
+	closeMenu = () => {
+		this.setState({ isMenuOpen: false });
 	}
 
 	render = () => {
@@ -12,27 +23,44 @@ class Header extends Component {
 		const { isMenuOpen } = this.state;
 		const burgerClass = isMenuOpen ? 'is-active' : '';
 
+
 		return (
 			<nav className="navbar">
 				<div className="container">
 					<div className="navbar-brand">
-						<h1 className="navbar-item">
+						<Link 
+							className="navbar-item is-size-4" 
+							to="/"
+						>
 							{siteTitle}
-						</h1>
-						<a
+						</Link>
+						<button
 							className={`navbar-burger ${burgerClass}`}
-							role="button"
+							type="button"
 							aria-label="menu"
+							onClick={this.handleMenu}
 						>
 							<span aria-hidden="true" />
 							<span aria-hidden="true" />
 							<span aria-hidden="true" />
-						</a>
+						</button>
 					</div>
 					<div className={`navbar-menu ${burgerClass}`}>
 						<div className="navbar-end">
-							<a className="navbar-item">Home</a>
-							<a className="navbar-item">Projects</a>
+							<Link 
+								to="/"
+								className="navbar-item is-size-5"
+								onClick={this.closeMenu}
+							>
+									Home
+							</Link>
+							<Link 
+								to="/projects"
+								className="navbar-item is-size-5"
+								onClick={this.closeMenu}
+							>
+								Projects
+							 </Link>
 						</div>
 					</div>
 				</div>
