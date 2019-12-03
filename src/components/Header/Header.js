@@ -61,6 +61,13 @@ class Header extends Component {
 							>
 								Projects
 							 </Link>
+							<Link 
+								to="/blog"
+								className="navbar-item is-size-5"
+								onClick={this.closeMenu}
+							>
+								Blog
+							 </Link>
 						</div>
 					</div>
 				</div>

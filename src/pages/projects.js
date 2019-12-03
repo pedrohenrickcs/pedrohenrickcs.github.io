@@ -1,6 +1,6 @@
 import React from 'react';
 import prototypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Layout from 'components/Layout';
@@ -71,8 +71,8 @@ const Projects = ({data}) => (
 				GitHub</a>
 			</p>
 
-			<div className="columns">
-				<div className="column is-half is-offset-one-quarter">
+			<div className="columns is-centered">
+				<div className="column is-half">
 
 					<Card
 						title="Aniversário Brastemp"
@@ -115,6 +115,16 @@ const Projects = ({data}) => (
 					/>
 				</div>
 			</div>
+			<p>
+			{`Tenho 6 anos de experiência como front-end, sendo cerca de 3 anos atuando com Vtex. 
+				Possuo facilidade em trabalhar em grupo, prezando sempre o melhor para o ambiente de trabalho e também para o cliente final, além da competência de me comprometer com o que é proposto buscando sempre o melhor resultado possível.`}
+			</p>
+			<p>
+			Veja meus projetos
+			{' '}
+			<Link to="/projects">projects</Link>
+			.
+			</p>
 		</section>
 	</Layout>
 );

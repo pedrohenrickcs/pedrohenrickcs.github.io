@@ -65,7 +65,9 @@ const Home = () => (
 			</p>
 			<p>
 			Veja meus projetos
+			{' '}
 			<Link to="/projects">projects</Link>
+			.
 			</p>
 		</section>
 	</Layout>
