@@ -70,6 +70,12 @@ const Blog = ({data}) => (
 					/>
 				</div>
 			</div>
+			<p className="has-text-centered">
+			Check out my
+			{' '}
+			<Link to="/stack">stack</Link>
+			.
+			</p>
 		</section>
 	</Layout>
 );
