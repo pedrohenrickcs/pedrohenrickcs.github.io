@@ -9,6 +9,7 @@ import Card from 'components/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { prototype } from 'events';
+import Title from '../components/Title/Title';
 
 export const queryImage = graphql `
 				query {
@@ -38,9 +39,7 @@ const Blog = ({data}) => (
         ></SEO>
 
 		<section className="section is-size-5-desktop is-size-6-touch">
-			<h1 className="title has-text-centered">
-				Projects</h1>
-			<hr />
+			<Title>Blog</Title>
 			
 			<p className="has-text-centered">
 				Veja alguns de meus projetos no meu <a href="https://github.com/pedrohenrickcs" target="_blank" aria-label="Github">

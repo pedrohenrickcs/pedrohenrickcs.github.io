@@ -10,6 +10,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { prototype } from 'events';
 
+import Title from 'components/Title';
+
 export const queryImage = graphql `
 				query {
 					project1: file(relativePath: { eq: "niver.png" }) {
@@ -59,9 +61,7 @@ const Projects = ({data}) => (
         ></SEO>
 
 		<section className="section is-size-5-desktop is-size-6-touch">
-			<h1 className="title has-text-centered">
-				Projects</h1>
-			<hr />
+			<Title>Projects</Title>
 			
 			<p className="has-text-centered">
 				Veja alguns de meus projetos no meu <a href="https://github.com/pedrohenrickcs" target="_blank" aria-label="Github">
@@ -115,14 +115,10 @@ const Projects = ({data}) => (
 					/>
 				</div>
 			</div>
-			<p>
-			{`Tenho 6 anos de experiência como front-end, sendo cerca de 3 anos atuando com Vtex. 
-				Possuo facilidade em trabalhar em grupo, prezando sempre o melhor para o ambiente de trabalho e também para o cliente final, além da competência de me comprometer com o que é proposto buscando sempre o melhor resultado possível.`}
-			</p>
-			<p>
-			Veja meus projetos
+			<p className="has-text-centered">
+			Check out my
 			{' '}
-			<Link to="/projects">projects</Link>
+			<Link to="/blog">blog</Link>
 			.
 			</p>
 		</section>

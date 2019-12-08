@@ -37,8 +37,8 @@ const Home = () => (
 			)}
 		/>
 		</figure>
-		<h1 className="title has-text-centered">Pedro Henrick Cavalcante Souza</h1>
-		<h2 className="subtitle has-text-centered">Web Developer</h2>
+		<h1 className="title has-text-centered has-text-light">Pedro Henrick Cavalcante Souza</h1>
+		<h2 className="subtitle has-text-centered has-text-warning">Web Developer</h2>
 		<div className="has-text-centered">
 			<a href="https://github.com/pedrohenrickcs" target="_blank" aria-label="Github">
 				<span className="icon is-large fa-2x">
@@ -58,7 +58,11 @@ const Home = () => (
 		</div>
 
 		<section className="section content is-size-5-desktop is-size-6-touch">
-			<h4>Oi, eu sou o Pedro</h4>
+			<h4 className="has-text-light">
+				Oi, eu sou o Pedro
+				{' '}
+				<span role="img" aria-label="face">😀</span>
+			</h4>
 			<p>
 			{`Tenho 6 anos de experiência como front-end, sendo cerca de 3 anos atuando com Vtex. 
 				Possuo facilidade em trabalhar em grupo, prezando sempre o melhor para o ambiente de trabalho e também para o cliente final, além da competência de me comprometer com o que é proposto buscando sempre o melhor resultado possível.`}

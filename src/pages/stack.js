@@ -3,6 +3,8 @@ import Helmet from 'react-helmet';
 
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
+import Title from "components/Title";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -19,9 +21,7 @@ const Stack = () => (
         </Helmet>
 
 		<section className="section is-size-5-desktop is-size-6-touch">
-			<h1 className="title has-text-centered">
-				Stack</h1>
-			<hr />
+			<Title>Stack</Title>
 			<div className="has-text-centered">
                 <p className="has-text-centered">
                     I have experience with many modern tools,
