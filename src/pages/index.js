@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link, StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -76,5 +77,11 @@ const Home = () => (
 		</section>
 	</Layout>
 );
+
+Home.propTypes = {
+	location: PropTypes.shape({
+		pathname: PropTypes.string.isRequired,
+	}).isRequired,
+};
 
 export default Home;

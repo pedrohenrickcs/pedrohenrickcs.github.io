@@ -8,8 +8,7 @@ import SEO from 'components/SEO';
 import Card from 'components/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { prototype } from 'events';
-import Title from '../components/Title/Title';
+import Title from 'components/Title/Title';
 
 export const queryImage = graphql `
 				query {

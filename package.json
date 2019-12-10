@@ -1,10 +1,10 @@
 {
-  "name": "luanorlandi.github.io",
-  "description": "Website of Luan Orlandi",
+  "name": "pedrohenrickcs.github.io",
+  "description": "Website of Pedro Henrick",
   "version": "1.0.0",
-  "author": "Luan Orlandi <orlandi.luan@gmail.com>",
+  "author": "Pedro Henrick <pedro.henrickcs@gmail.com>",
   "keywords": [
-    "website, portfolio, luanorlandi, gatsby"
+    "website, portfolio, pedrohenrickcs, gatsby"
   ],
   "license": "MIT",
   "repository": {

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Pedro Henrick',
     author: '@pedrohenrickcs',
-    siteUrl: ''
+    siteUrl: 'https://pedrohenrickcs.github.io'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
