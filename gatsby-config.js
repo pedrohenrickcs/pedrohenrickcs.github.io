@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Pedro Henrick',
     author: '@pedrohenrickcs',
-    siteUrl: 'https://pedrohenrickcs.github.io'
+    siteUrl: 'https://pedrohenrickcs.github.io',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -22,6 +22,14 @@ module.exports = {
       options: {
         icon: 'src/assets/images/favicon.png',
       }
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: "UA-154475129-1",
+        anonymize: true,
+        respectDNT: true,
+      }
+    },
   ],
 };
