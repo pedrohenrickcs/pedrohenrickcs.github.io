@@ -12,4 +12,4 @@ I do not link or sell any information related to your personal information such 
 
 ## Privacy Policy credits
 
-This document is based on the Privacy Policy of GitHub, see https://github.com/github/site-policy.
+This document is based on the Privacy Policy of GitHub, see https://github.com/github/site-policy. 

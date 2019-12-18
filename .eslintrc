@@ -16,7 +16,7 @@
                 "ignoreUrls": true,
                 "ignoreStrings": true,
                 "ignoreTemplateLiterals": true
-            }
+            } 
         ],
         "react/jsx-filename-extension": [
             1, {

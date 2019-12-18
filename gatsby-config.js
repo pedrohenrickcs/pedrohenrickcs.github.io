@@ -15,7 +15,7 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/assets/images`,
-      },
+      }, 
     },
     {
       resolve: 'gatsby-plugin-manifest',
