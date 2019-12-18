@@ -64,7 +64,7 @@ const Projects = ({data}) => (
 			<Title>Projects</Title>
 			
 			<p className="has-text-centered">
-				Veja alguns de meus projetos no meu <a href="https://github.com/pedrohenrickcs" target="_blank" aria-label="Github">
+				See some of my projects on my <a href="https://github.com/pedrohenrickcs" target="_blank" aria-label="Github">
 				<span className="icon">
 					<FontAwesomeIcon icon={faGithub}/>
 				</span>
@@ -118,7 +118,7 @@ const Projects = ({data}) => (
 			<p className="has-text-centered">
 			Check out my
 			{' '}
-			<Link to="/blog">blog</Link>
+			<Link to="/stack">stacks</Link>
 			.
 			</p>
 		</section>

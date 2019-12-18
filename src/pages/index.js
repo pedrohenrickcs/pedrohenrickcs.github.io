@@ -60,16 +60,16 @@ const Home = () => (
 
 		<section className="section content is-size-5-desktop is-size-6-touch">
 			<h4 className="has-text-light">
-				Oi, eu sou o Pedro
+				Hi, I'm Pedro
 				{' '}
 				<span role="img" aria-label="face">😀</span>
 			</h4>
 			<p>
-			{`Tenho 6 anos de experiência como front-end, sendo cerca de 3 anos atuando com Vtex. 
-				Possuo facilidade em trabalhar em grupo, prezando sempre o melhor para o ambiente de trabalho e também para o cliente final, além da competência de me comprometer com o que é proposto buscando sempre o melhor resultado possível.`}
+			{`I have 6 years of experience as a front end, being about 3 years working with Vtex. 
+			Possibility of ease of working in groups always the best for the work environment and also for the end customer besides the competence of me to commit to what is always seeking the best possible result.`}
 			</p>
 			<p>
-			Veja meus projetos
+			Check out my
 			{' '}
 			<Link to="/projects">projects</Link>
 			.
