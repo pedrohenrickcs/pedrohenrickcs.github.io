@@ -41,17 +41,17 @@ const Home = () => (
 		<h1 className="title has-text-centered has-text-light">Pedro Henrick Cavalcante Souza</h1>
 		<h2 className="subtitle has-text-centered has-text-warning">Web Developer</h2>
 		<div className="has-text-centered">
-			<a href="https://github.com/pedrohenrickcs" target="_blank" aria-label="Github">
+			<a href="https://github.com/pedrohenrickcs" rel="noopener" target="_blank" aria-label="Github">
 				<span className="icon is-large fa-2x">
 					<FontAwesomeIcon icon={faGithub}/>
 				</span>
 			</a>
-			<a href="https://www.linkedin.com/in/pedro-henrickcs/" target="_blank" aria-label="Linkedin">
+			<a href="https://www.linkedin.com/in/pedro-henrickcs/" rel="noreferrer" target="_blank" aria-label="Linkedin">
 				<span className="icon is-large fa-2x">
 					<FontAwesomeIcon icon={faLinkedin}/>
 				</span>
 			</a>
-			<a href="https://codepen.io/pedrohenrickcs/" target="_blank" aria-label="Codepen">
+			<a href="https://codepen.io/pedrohenrickcs/" rel="noreferrer" target="_blank" aria-label="Codepen">
 				<span className="icon is-large fa-2x">
 					<FontAwesomeIcon icon={faCodepen}/>
 				</span>
