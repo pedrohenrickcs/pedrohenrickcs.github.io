@@ -65,10 +65,8 @@ const Projects = ({data}) => (
 			
 			<p className="has-text-centered">
 				See some of my projects on my <a href="https://github.com/pedrohenrickcs" target="_blank" aria-label="Github">
-				<span className="icon">
-					<FontAwesomeIcon icon={faGithub}/>
-				</span>
-				GitHub</a>
+				{' '}
+				GitHub</a>.
 			</p>
 
 			<div className="columns is-centered">
