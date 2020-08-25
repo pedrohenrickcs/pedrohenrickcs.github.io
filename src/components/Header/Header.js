@@ -54,13 +54,13 @@ class Header extends Component {
 							>
 									Home
 							</Link>
-							{/* <Link 
+							<Link 
 								to="/projects"
 								className="navbar-item is-size-5"
 								onClick={this.closeMenu}
 							>
 								Projects
-							 </Link> */}
+							 </Link>
 							<Link 
 								to="/stack"
 								className="navbar-item is-size-5"

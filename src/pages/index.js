@@ -68,12 +68,12 @@ const Home = () => (
 			{`I have 6 years of experience as a front end, being about 3 years working with Vtex. 
 			Possibility of ease of working in groups always the best for the work environment and also for the end customer besides the competence of me to commit to what is always seeking the best possible result.`}
 			</p>
-			{/* <p>
+			<p>
 			Check out my
 			{' '}
 			<Link to="/projects">projects</Link>
 			.
-			</p> */}
+			</p>
 		</section>
 	</Layout>
 );

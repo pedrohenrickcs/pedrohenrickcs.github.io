@@ -49,6 +49,20 @@ export const queryImage = graphql `
 							}
 						}
 					}
+					project6: file(relativePath: { eq: "rihappy.PNG" }) {
+						childImageSharp {
+							fixed(width: 96, height: 96) {
+							...GatsbyImageSharpFixed
+							}
+						}
+					}
+					project7: file(relativePath: { eq: "cacau-show.PNG" }) {
+						childImageSharp {
+							fixed(width: 96, height: 96) {
+							...GatsbyImageSharpFixed
+							}
+						}
+					}
 				}
 			`;
 
@@ -71,12 +85,11 @@ const Projects = ({data}) => (
 
 			<div className="columns is-centered">
 				<div className="column is-half">
-
 					<Card
 						title="Aniversário Brastemp"
 						subtitle="Criação Landing Page para aniversário da loja"
 						link="https://loja.brastemp.com.br/cadastro"
-						tags={["HTML", "SCSS", "Javascript", "Vtex"]}
+						tags={["HTML", "SCSS", "Javascript", "Jquery", "Vtex"]}
 						image={<Img fixed={data.project1.childImageSharp.fixed} alt={"Brastemp"} />}
 					/>
 
@@ -84,7 +97,7 @@ const Projects = ({data}) => (
 						title="Landing Page"
 						subtitle="Criação Landing Page para aniversário da loja"
 						link="https://www.diretonaloja.com.br/landing"
-						tags={["HTML", "SCSS", "Javascript", "Vtex"]}
+						tags={["HTML", "SCSS", "Javascript", "Jquery", "Vtex"]}
 						image={<Img fixed={data.project2.childImageSharp.fixed} alt={"Direto na Loja"} />}
 					/>
 
@@ -92,7 +105,30 @@ const Projects = ({data}) => (
 						title="Diretonaloja"
 						subtitle="Página de cupom customizada feita em Vtex"
 						link="https://www.diretonaloja.com.br/cupom"
-						tags={["HTML", "SCSS", "Javascript", "Vtex"]}
+						tags={["HTML", "SCSS", "Javascript", "Jquery", "Vtex"]}
+						image={<Img fixed={data.project3.childImageSharp.fixed} alt={"Direto na Loja"} />}
+					/>
+					<Card
+						title="Compra Certa"
+						subtitle="Criação Landing Page para aniversário da loja"
+						link="https://www.compracerta.com.br/landing/aniversario"
+						tags={["HTML", "SCSS", "Javascript", "Jquery", "Vtex"]}
+						image={<Img fixed={data.project4.childImageSharp.fixed} alt={"Direto na Loja"} />}
+					/>
+					<Card
+						title="Cacau Show"
+						subtitle="Manutenção Loja Vtex"
+						link="http://lojavirtual.cacaushow.com.br"
+						tags={["HTML", "SCSS", "Javascript", "Jquery", "Vtex"]}
+						image={<Img fixed={data.project7.childImageSharp.fixed} alt={"Cacau Show"} />}
+					/>
+				</div>
+				<div className="column is-half">
+					<Card
+						title="Diretonaloja"
+						subtitle="Página de cupom customizada feita em Vtex"
+						link="https://www.diretonaloja.com.br/cupom"
+						tags={["HTML", "SCSS", "Javascript", "Jquery", "Vtex"]}
 						image={<Img fixed={data.project3.childImageSharp.fixed} alt={"Direto na Loja"} />}
 					/>
 
@@ -100,7 +136,7 @@ const Projects = ({data}) => (
 						title="Compra Certa"
 						subtitle="Criação Landing Page para aniversário da loja"
 						link="https://www.compracerta.com.br/landing/aniversario"
-						tags={["HTML", "SCSS", "Javascript", "Vtex"]}
+						tags={["HTML", "SCSS", "Javascript", "Jquery", "Vtex"]}
 						image={<Img fixed={data.project4.childImageSharp.fixed} alt={"Direto na Loja"} />}
 					/>
 
@@ -108,8 +144,16 @@ const Projects = ({data}) => (
 						title="Api GitHub"
 						subtitle="Consulta repositórios GitHub"
 						link="https://pedrohenrick-api-github.netlify.com"
-						tags={["HTML", "SCSS", "React", "Rest API"]}
-						image={<Img fixed={data.project5.childImageSharp.fixed} alt={"Api Guthub"} />}
+						tags={["HTML", "SCSS", "ReactJS", "Rest API"]}
+						image={<Img fixed={data.project5.childImageSharp.fixed} alt={"Api Github"} />}
+					/>
+
+					<Card
+						title="Rihappy"
+						subtitle="Manutenção Loja Vtex"
+						link="https://www.rihappy.com.br"
+						tags={["HTML", "SCSS", "Javascript", "Jquery", "Vtex"]}
+						image={<Img fixed={data.project6.childImageSharp.fixed} alt={"Rihappy"} />}
 					/>
 				</div>
 			</div>
